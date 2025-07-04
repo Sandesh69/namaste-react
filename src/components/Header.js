@@ -9,7 +9,7 @@ const Header = () => {
   const isOnline = useOnlineStatus();
 
   //subscribing to store using a selector
-  const cartItems =useSelector((store)=>store.cart.items)
+  const cartItems = useSelector((store) => store.cart.items);
 
   return (
     <div className="flex justify-between bg-gray-300 shadow-lg h-40">
@@ -32,7 +32,9 @@ const Header = () => {
             <Link to="/grocery">Grocery</Link>
           </li>
 
-          <li className="px-4  font-semibold cursor-pointer"><Link to='/cart'>Cart-({cartItems.length} Items)</Link></li>
+          <li className="px-4  font-semibold cursor-pointer">
+            <Link to="/cart">Cart-({cartItems.length} Items)</Link>
+          </li>
           <button
             className="login-btn"
             onClick={() => {

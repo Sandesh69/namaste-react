@@ -35,7 +35,7 @@ const Body = () => {
     );
   }
 
-  const RestaurantCardPromoted=withPromotedLabel(RestaurantCard)
+  const RestaurantCardPromoted = withPromotedLabel(RestaurantCard);
   return listOfRestaurants?.length === 0 ? (
     <Shimmer />
   ) : (
@@ -85,9 +85,11 @@ const Body = () => {
             key={restaurant.info.id}
             to={"/restaurants/" + restaurant.info.id}
           >
-            {restaurant.info.promoted?<RestaurantCardPromoted resData={restaurant}/>: <RestaurantCard key={restaurant.info.id} resData={restaurant} />}
-            {" "}
-            
+            {restaurant.info.promoted ? (
+              <RestaurantCardPromoted resData={restaurant} />
+            ) : (
+              <RestaurantCard key={restaurant.info.id} resData={restaurant} />
+            )}{" "}
           </Link>
         ))}
       </div>

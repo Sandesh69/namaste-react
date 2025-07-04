@@ -16,47 +16,49 @@ const AppLayout = () => {
   return (
     <Provider store={appStore}>
       <div className="app">
-      <Header />
-      <Outlet/>
-    </div>
+        <Header />
+        <Outlet />
+      </div>
     </Provider>
-    
   );
 };
-const Grocery=lazy(()=>{return import ("./components/Grocery")})
+const Grocery = lazy(() => {
+  return import("./components/Grocery");
+});
 
 const appRouter = createBrowserRouter([
   {
     path: "/",
     element: <AppLayout />,
-    children:[ 
-      {path:"/",
-        element:<Body/>
+    children: [
+      { path: "/", element: <Body /> },
+      {
+        path: "/about",
+        element: <About />,
       },
       {
-      path: "/about",
-      element: <About/>,
-    },
-    {
-      path: "/contact",
-      element: <Contact />,
-    },
-    {
-      path:"/restaurants/:resId",
-      element:<RestaurantMenu/>
-    },
-    {
-      path:"/grocery",
-      element:<Suspense fallback={<Shimmer/>}><Grocery/></Suspense>
-    },
-    {
-      path:"/cart",
-      element:<Cart/>
-    }
-  ],
-    errorElement:<Error/>
+        path: "/contact",
+        element: <Contact />,
+      },
+      {
+        path: "/restaurants/:resId",
+        element: <RestaurantMenu />,
+      },
+      {
+        path: "/grocery",
+        element: (
+          <Suspense fallback={<Shimmer />}>
+            <Grocery />
+          </Suspense>
+        ),
+      },
+      {
+        path: "/cart",
+        element: <Cart />,
+      },
+    ],
+    errorElement: <Error />,
   },
- 
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

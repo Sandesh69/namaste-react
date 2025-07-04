@@ -6,7 +6,10 @@ const RestaurantCard = (props) => {
     resData?.info;
 
   return (
-    <div data-testid="res-card" className="m-4 p-4 w-[250px] bg-gray-100 rounded-xl shadow-lg hover:bg-gray-200 h-120">
+    <div
+      data-testid="res-card"
+      className="m-4 p-4 w-[250px] bg-gray-100 rounded-xl shadow-lg hover:bg-gray-200 h-120"
+    >
       <img
         alt="res-logo"
         className="rounded-md"
@@ -21,18 +24,18 @@ const RestaurantCard = (props) => {
   );
 };
 
-
 export const withPromotedLabel = (RestaurantCard) => {
-  return(props)=>{
-    return(
+  return (props) => {
+    return (
       <div>
-        <label className="absolute bg-balck text-white m-2 p-2 rounded-lg"> Promoted</label>
-        <RestaurantCard {...props}/>
+        <label className="absolute bg-balck text-white m-2 p-2 rounded-lg">
+          {" "}
+          Promoted
+        </label>
+        <RestaurantCard {...props} />
       </div>
-    )
-  }
- 
-}
-
+    );
+  };
+};
 
 export default RestaurantCard;
