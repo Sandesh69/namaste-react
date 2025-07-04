@@ -1,0 +1,46 @@
+{
+  "name": "namastereact",
+  "version": "1.0.0",
+  "description": "This is Namaste React By Sandesh",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest",
+    "watch-test":"jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sandesh69/namaste-react.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "Sandesh Kumar Rai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sandesh69/namaste-react/issues"
+  },
+  "homepage": "https://github.com/Sandesh69/namaste-react#readme",
+  "devDependencies": {
+    "@babel/core": "^7.27.7",
+    "@babel/preset-env": "^7.27.2",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.3.0",
+    "babel-jest": "^30.0.2",
+    "jest": "^30.0.3",
+    "jest-environment-jsdom": "^30.0.2",
+    "parcel": "^2.15.1"
+  },
+  "dependencies": {
+    "@babel/preset-react": "^7.27.1",
+    "@reduxjs/toolkit": "^2.8.2",
+    "@tailwindcss/postcss": "^4.1.10",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-redux": "^9.2.0",
+    "react-router": "^7.6.2",
+    "react-router-dom": "^7.6.2",
+    "tailwindcss": "^4.1.10"
+  }
+}

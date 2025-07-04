@@ -1,0 +1,97 @@
+ {
+    "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+    "info": {
+        "id": "78511",
+        "name": "NIC Ice Creams",
+        "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/1/10/8bdab243-cdea-48b6-b01e-5b2229208339_78511.JPG",
+        "locality": "8th Block",
+        "areaName": "Koramangala",
+        "costForTwo": "₹120 for two",
+        "cuisines": [
+            "Ice Cream",
+            "Desserts"
+        ],
+        "avgRating": 4.8,
+        "veg": true,
+        "parentId": "6249",
+        "avgRatingString": "4.8",
+        "totalRatingsString": "9.5K+",
+        "sla": {
+            "deliveryTime": 19,
+            "lastMileTravel": 1.5,
+            "serviceability": "SERVICEABLE",
+            "slaString": "15-20 mins",
+            "lastMileTravelString": "1.5 km",
+            "iconType": "ICON_TYPE_EMPTY"
+        },
+        "availability": {
+            "nextCloseTime": "2025-07-03 23:00:00",
+            "opened": true
+        },
+        "badges": {
+            "textExtendedBadges": [
+                {
+                    "iconId": "Ratnesh_Badges/test2.png",
+                    "shortDescription": "Perfect ice cream delivery",
+                    "fontColor": "#7E808C"
+                }
+            ]
+        },
+        "isOpen": true,
+        "type": "F",
+        "badgesV2": {
+            "entityBadges": {
+                "imageBased": {},
+                "textBased": {},
+                "textExtendedBadges": {
+                    "badgeObject": [
+                        {
+                            "attributes": {
+                                "description": "",
+                                "fontColor": "#7E808C",
+                                "iconId": "Ratnesh_Badges/test2.png",
+                                "shortDescription": "Perfect ice cream delivery"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        "aggregatedDiscountInfoV3": {
+            "header": "ITEMS",
+            "subHeader": "AT ₹148"
+        },
+        "orderabilityCommunication": {
+            "title": {},
+            "subTitle": {},
+            "message": {},
+            "customIcon": {}
+        },
+        "differentiatedUi": {
+            "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+            "differentiatedUiMediaDetails": {
+                "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                "lottie": {},
+                "video": {}
+            }
+        },
+        "reviewsSummary": {},
+        "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+        "restaurantOfferPresentationInfo": {},
+        "externalRatings": {
+            "aggregatedRating": {
+                "rating": "--"
+            }
+        },
+        "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+    },
+    "analytics": {
+        "context": "seo-data-eef288f5-dd01-4c79-b775-6ce2ab897cf3"
+    },
+    "cta": {
+        "link": "https://www.swiggy.com/city/bangalore/nic-ice-creams-8th-block-koramangala-rest78511",
+        "text": "RESTAURANT_MENU",
+        "type": "WEBLINK"
+    },
+    "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+}
